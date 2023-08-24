@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Form Creation</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/insert.php" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender"><br>
+        <label for="regno">Registration Number:</label><br>
+        <input type="number" id="regno" name="regno"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="number" id="phone" name="phone"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <label for="Department">Department: </label><br>
+        <input type="radio" id="it" name="department" value="IT">
+        <label for="it">Information Technology</label><br>
+        <input type="radio" id="cse" name="department" value="CSE">
+        <label for="cse">Computer Science and Engineering</label><br>
+        <input type="radio" id="mech" name="department" value="MECH">
+        <label for="mech">Mechanical Engineering</label><br>
+        <input type="radio" id="civil" name="department" value="CIVIL">
+        <label for="civil">Civil Engineering</label><br>
+        <input type="radio" id="ece" name="department" value="ECE">
+        <label for="ece">Electronics and Communication Engineering</label><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form> 
+</body>
+</html>

@@ -1,0 +1,12 @@
+html {
+    font-family: sans-serif;
+    margin-top: 1%;
+    margin-left: 3%;
+    background-color: whitesmoke;
+    margin-right: auto;
+  }
+
+h1 {
+    text-decoration: underline;
+    font-size: 1.9rem;
+}
