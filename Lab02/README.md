@@ -1,5 +1,5 @@
 # College Events Webpage
-This repository contains a simple HTML webpage that lists upcoming college events and their budgets. It uses HTML table for structuring the event information.
+This directory contains a simple HTML webpage that lists upcoming college events and their budgets. It uses HTML table for structuring the event information.
 
 ## Table of Contents
 
