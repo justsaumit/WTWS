@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Form Creation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="gender">Gender:</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="address">Home Address:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <br>
+            <label for="department">Department: </label><br>
+            <input type="radio" id="it" name="department" value="IT" required>
+            <label for="it">Information Technology</label><br>
+            <input type="radio" id="cse" name="department" value="CSE" required>
+            <label for="cse">Computer Science and Engineering</label><br>
+            <input type="radio" id="mech" name="department" value="MECH" required>
+            <label for="mech">Mechanical Engineering</label><br>
+            <input type="radio" id="civil" name="department" value="CIVIL" required>
+            <label for="civil">Civil Engineering</label><br>
+            <input type="radio" id="ece" name="department" value="ECE" required>
+            <label for="ece">Electronics and Communication Engineering</label><br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
