@@ -1,9 +1,15 @@
 <?php
-$servername = "db";
-$username = "example";
-$password = "example";
-$database = "regformdata";
-$tableName = "regtable";
+require __DIR__ . '/vendor/autoload.php';
+
+use Dotenv\Dotenv;
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$servername = getenv('DB_SERVER');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$database = getenv('DB_NAME');
+$tableName = getenv('DB_TABLE');
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

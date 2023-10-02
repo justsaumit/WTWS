@@ -5,10 +5,10 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: regformdata
-      MYSQL_USER: example
-      MYSQL_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "3306:3306"
     volumes:
@@ -21,13 +21,19 @@ services:
     restart: always
     ports:
       - "80:80"
+    environment:
+      DB_SERVER: ${DB_SERVER}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      DB_TABLE: ${DB_TABLE}
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     restart: always
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
       - "8080:80"
     depends_on:

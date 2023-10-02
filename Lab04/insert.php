@@ -8,11 +8,18 @@
 <body>
     <center>
         <?php
-        $servername = "db";
-        $username = "example";
-        $password = "example";
-        $dbname = "regformdata";
-        $tablename = "regtable";
+        // Load environment variables from .env file
+        require __DIR__ . '/vendor/autoload.php';
+
+        use Dotenv\Dotenv;
+        $dotenv = Dotenv::createImmutable(__DIR__);
+        $dotenv->load();
+
+        $servername = getenv('DB_SERVER');
+        $username = getenv('DB_USERNAME');
+        $password = getenv('DB_PASSWORD');
+        $dbname = getenv('DB_NAME');
+        $tablename = getenv('DB_TABLE');
  
         // Create connection
         $conn = mysqli_connect($servername, $username, $password, $dbname);
