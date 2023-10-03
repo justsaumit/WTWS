@@ -76,24 +76,28 @@ Before you can use this code, ensure you have the following software and depende
 
 6. To create the database table, open a web browser and navigate to `http://localhost/create_table.php`. This PHP script will create the necessary table in the database.
 
+    <div align="center">
     <img src="./media/screenshot_l4-3.png" alt="Successful table creation using php" style="max-height:250px;">
-    <u><p style="text-align:center;">Step 6: Create database table using php</p></u>
+    <u><p>Step 6: Create database table using php</p></u>
+    </div>
 
 7. Fill out the registration form and click "Submit" to insert the data into the database.
-
+   <div align="center">
    <img src="./media/screenshot_l4-5.png" alt="using portainer" style="max-height:350px;max-width:none;">
-   <u><p style="text-align:center;">Step 7: Fill out the registration form properly and click on Submit button</p></u>
+   <u><p>Step 7: Fill out the registration form properly and click on Submit button</p></u>
 
-    <img src="./media/screenshot_l4-6.png" alt="using portainer" style="max-height:250px;">
-    <u><p style="text-align:center;">PHP output confirming successful data insertion in the database</p></u>
+   <img src="./media/screenshot_l4-6.png" alt="using portainer" style="max-height:250px;">
+   <u><p>PHP output confirming successful data insertion in the database</p></u>
+   </div>
 
 8. To view the inserted data, you can use phpMyAdmin or connect to the MySQL database directly using your preferred MySQL client.
-
+   <div align="center">
     <img src="./media/screenshot_l4-4.png" alt="using portainer" style="max-height:350px;">
     <u><p style="text-align:center;">Confirming table creation in phpMyAdmin</p></u>
 
     <img src="./media/screenshot_l4-7.png" alt="using portainer" style="max-height:250px;">
     <u><p style="text-align:center;">Confirming data insertion in phpMyAdmin</p></u>
+   </div>
 
 9. To stop and remove the Docker containers, run:
 
