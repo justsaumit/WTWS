@@ -17,14 +17,16 @@ This repository contains code for a simple registration form with HTML form vali
 
 ## Screenshots
 
+<div align="center">
 <img src="./media/screenshot_l4-0.png" alt="using portainer" style="max-height:250px;">
-<u><p style="text-align:center;">Using Portainer to Manage containers</p></u>
+<u><p>Using Portainer to Manage containers</p></u>
 
 <img src="./media/screenshot_l4-1.png" alt="using portainer" style="max-height:350px;max-width:none;">
 <u><p>Sample HTML Form</p></u>
 
 <img src="./media/screenshot_l4-2.png" alt="using portainer" style="max-height:350px;max-width:none;">
 <u><p>HTML Form Validation warning for empty fields being present after submission</p></u>
+</div>
 
 ## Usage
 
